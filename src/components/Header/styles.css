@@ -1,0 +1,164 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  position: sticky;
+  top: 0;
+  background-color: #032541;
+  z-index: 1000;
+  color: white;
+}
+
+.navbar-logo {
+  height: 2rem;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 1rem;
+  border: 1px solid #ffffff3d;
+  border-radius: 2rem;
+  background-color: #ffffff1a;
+}
+
+.search-bar:hover {
+  background-color: #ffffff33;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.search-bar-text {
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-right: 1px solid #ffffff3d;
+  padding-right: 0.5rem;
+}
+
+.search-bar-text2 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #ffffffb3;
+  padding-right: 0.5rem;
+}
+
+.search-icon-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #01b4e4;
+  padding: 0.25rem;
+  border-radius: 50%;
+  color: white;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.watchlist {
+  padding: 1rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.watchlist:hover {
+  background-color: #ffffff1a;
+}
+
+.profile-menu-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.25rem;
+  color: white;
+  border: 1px solid #ffffff3d;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+
+.menu-items {
+  padding: 0.5rem 1rem !important;
+  font-size: 0.8rem;
+  color: #032541;
+}
+
+#basic-button:hover{
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .search-bar,
+  .watchlist {
+    display: none;
+  }
+
+  .navbar {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .profile-menu-flex {
+    position: fixed;
+    top: 0.5rem;
+    right: 1.5rem;
+  }
+  /* ... existing styles ... */
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff1a;
+  border-radius: 20px;
+  padding: 5px;
+  flex-grow: 1;
+  max-width: 600px;
+  margin: 0 20px;
+}
+
+.search-input {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 8px 15px;
+  flex-grow: 1;
+}
+
+.search-input::placeholder {
+  color: #ffffffb3;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.search-icon {
+  color: #01b4e4;
+}
+
+/* ... rest of the existing styles ... */
+
+@media only screen and (max-width: 800px) {
+  .search-bar {
+    display: none;
+  }
+
+  /* ... rest of the media query styles ... */
+}
+}

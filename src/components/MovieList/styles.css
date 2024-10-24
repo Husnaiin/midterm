@@ -1,0 +1,63 @@
+.cards-flex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card-box {
+  width: 250px;
+  background-color: #b9b9b9;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-box:hover {
+  transform: translateY(-5px);
+}
+
+.card-info {
+  padding: 1rem;
+}
+
+.card-info-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.card-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: #f39c12;
+}
+
+.card-genre, .card-release-date, .card-duration, .card-director {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+@media only screen and (max-width: 600px) {
+  .cards-flex {
+    padding: 0.5rem;
+  }
+
+  .card-box {
+    width: 100%;
+    max-width: 300px;
+  }
+}
